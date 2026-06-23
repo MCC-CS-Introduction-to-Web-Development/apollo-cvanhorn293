@@ -9,11 +9,11 @@ const PRODUCT_ORDER_KEY = "product_order";
 
 export default function DataDisplay() {
     const { data, loading, error } = useGetProductsQuery({
-        variables: { offset: 0, limit: 200 }
+        variables: { offset: 0, limit: 200 },
     });
     const [deletedProductIds, setDeletedProductIds] = useState<Set<number>>(new Set());
     const [productOrderArray, setProductOrderArray] = useState<number[]>([]);
-    
+
     const products = data?.products || [];
 
     useEffect(() => {

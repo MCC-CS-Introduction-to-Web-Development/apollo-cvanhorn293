@@ -1,21 +1,21 @@
 type Query {
-  products(offset: Int, limit: Int): [Product!]!
+    products(offset: Int, limit: Int): [Product!]!
 }
 
 type Product {
-  id: Int!
-  title: String!
-  price: Float!
-  description: String!
-  category: Category!
-  images: [String!]!
+    id: Int!
+    title: String!
+    price: Float!
+    description: String!
+    category: Category!
+    images: [String!]!
 }
 
 type Category {
-  id: Int!
-  name: String!
-  slug: String!
-  image: String!
-  creationAt: String!
-  updatedAt: String!
+    id: Int!
+    name: String!
+    slug: String!
+    image: String!
+    creationAt: String!
+    updatedAt: String!
 }

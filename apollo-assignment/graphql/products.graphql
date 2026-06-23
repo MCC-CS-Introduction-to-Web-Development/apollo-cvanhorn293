@@ -1,17 +1,17 @@
 query GetProducts($offset: Int, $limit: Int) {
-  products(offset: $offset, limit: $limit) {
-    id
-    title
-    price
-    description
-    category {
-      id
-      name
-      slug
-      image
-      creationAt
-      updatedAt
+    products(offset: $offset, limit: $limit) {
+        id
+        title
+        price
+        description
+        category {
+            id
+            name
+            slug
+            image
+            creationAt
+            updatedAt
+        }
+        images
     }
-    images
-  }
 }
